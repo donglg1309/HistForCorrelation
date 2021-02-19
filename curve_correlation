@@ -1,0 +1,10 @@
+curve_correlation<-function(x,y){
+correlation_values<-NULL
+for ( i in 1:length(x[,1]))
+{       
+        correlation_values[i]<-cor(x[i,],y[i,])
+#       return(correlation_values)
+}
+hist(correlation_values,xlim=c(-1,1))
+#return(correlation_values)
+}
